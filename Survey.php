@@ -52,7 +52,7 @@ $basket = [
 
 
 <?php
-
+//https://www.airpair.com/php/fatal-error-allowed-memory-size
 ini_set('memory_limit', '256M');
 
 //debug_backtrace
@@ -77,7 +77,7 @@ error_reporting(E_ALL);
 
 try {
 
-//connection
+//connection http://php.net/manual/en/pdo.prepare.php 
 
 $db = new PDO ('mysql:host=db.dcs.aber.ac.uk;dbname=cs39620_17_18_mim32', 'mim32', 'michelangelomastroroccodegrandis');
 
@@ -158,7 +158,7 @@ $x = $Item;
 	];
 
 
-	//condition to create $coicop as difference between $result and this			
+	//condition to split TABLE price_index in $coicop, $cpih and $item_w  			
 
 	if  ($key['COICOP_WEIGHT'] == 0.00)	{			
 
